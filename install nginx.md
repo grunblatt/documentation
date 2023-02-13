@@ -337,7 +337,7 @@ npm install pm2 -g
 ```
 apt update && apt install sudo curl && curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
 ```
-create a file
+create a file in your project folder
 ```
 ecosystem.config.js
 ```
@@ -345,10 +345,10 @@ enter
 ```
 module.exports = {
     apps : [{
-      name: "/var/www/betaapi.srx365.sprxdev.com/SRX365_API",
+      name: "/var/www/<project_path>",
       script: "dotnet",
       args: "run",
-      cwd:"/var/www/betaapi.srx365.sprxdev.com/SRX365_API",
+      cwd:"/var/www/<project_path>",
       max_memory_restart: "200M",
       max_restarts: 200,  exp_backoff_restart_delay: 1000,    
     }
