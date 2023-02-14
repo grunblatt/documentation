@@ -64,7 +64,7 @@ Commercial support is available at nginx.com.
 Thank you for using nginx.
 ```
 ```bash
-sudo nano /etc/nginx/sites-available/your_domain
+sudo nano /etc/nginx/sites-available/<your_domain>
 ```
 enter in the file 
 ```c
