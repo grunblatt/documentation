@@ -359,6 +359,9 @@ module.exports = {
 ```
 pm2 start var/www<your_path_ecosystem.config.js>
 ```
+```
+pm2-logrotate
+```
 to view status
 ```
 pm2 logs
