@@ -360,7 +360,7 @@ module.exports = {
 pm2 start var/www<your_path_ecosystem.config.js>
 ```
 ```
-pm2-logrotate
+pm2 install pm2-logrotate
 ```
 to view status
 ```
