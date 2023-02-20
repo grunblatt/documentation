@@ -18,6 +18,7 @@ Available applications:
   ```bash
   sudo ufw allow 'Nginx HTTP'
   sudo ufw allow 'ftp'
+  sudo ufw allow 'OpemSSH'
   ufw --force enable
   ```
   ```bash
@@ -29,11 +30,9 @@ Available applications:
 
 To                         Action      From
 --                         ------      ----
-21/tcp                     ALLOW       Anywhere                  
-Nginx Full                 ALLOW       Anywhere                  
+21/tcp                     ALLOW       Anywhere                
 OpenSSH                    ALLOW       Anywhere                  
 21/tcp (v6)                ALLOW       Anywhere (v6)             
-Nginx Full (v6)            ALLOW       Anywhere (v6)             
 OpenSSH (v6)               ALLOW       Anywhere (v6)  
 ```
 check the web server
@@ -201,12 +200,14 @@ IMPORTANT NOTES:
    sudo apt install dotnet-sdk-6.0
    ```
    ```bash
-   sudo mkdir -p /var/www/<project_name>
+   sudo mkdir -p /var/www/<your_domain>
    ```
    ```bash
-   cd /var/www/<project_name>
+   cd /var/www/<your_domain>
    git clone <your_github_url>
    ```
+   ```
+   cd <your_project>
    ```bash
    dotnet build
    ```
@@ -225,10 +226,10 @@ IMPORTANT NOTES:
    add the following content to it (the following is an example, change all the project related content)
    ```c
    [Unit]
-Description=SRX365_API
+Description=<add_a_description>
 
 [Service]
-WorkingDirectory=/var/www/<project_name>
+WorkingDirectory=/var/www/<your_domain>
 ExecStart=/usr/bin/dotnet /var/www/<project_path>/bin/Debug/net6.0/publish/<project_name>.dll
 Restart=always
 RestartSec=10
@@ -244,10 +245,10 @@ WantedBy=multi-user.target
 sudo systemctl enable <your_project_name>.service
 ```
 ```bash
-sudo systemctl start movie.service
+sudo systemctl start <your_project_name>.service
 ```
 ```bash
-sudo systemctl status movie.service
+sudo systemctl status <your_project_name>.service
 ```
 (this may take some time)  
 Output  
