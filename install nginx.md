@@ -371,3 +371,4 @@ to view status
 pm2 logs
 ````
 ---
+[for supervisor](https://csjourney.com/managing-processes-with-supervisor-in-depth-tutorial/#writing-conf-files)
