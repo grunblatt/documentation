@@ -31,9 +31,12 @@ Available applications:
 To                         Action      From
 --                         ------      ----
 21/tcp                     ALLOW       Anywhere                
-OpenSSH                    ALLOW       Anywhere                  
+OpenSSH                    ALLOW       Anywhere     
+Nginx HTTP                 ALLOW       Anywhere
 21/tcp (v6)                ALLOW       Anywhere (v6)             
 OpenSSH (v6)               ALLOW       Anywhere (v6)  
+Nginx HTTP(v6)             ALLOW       Anywhere(v6)
+
 ```
 check the web server
 ```bash
