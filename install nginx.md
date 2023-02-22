@@ -220,6 +220,7 @@ IMPORTANT NOTES:
    ```bash
    sudo nginx -s reload
    ```
+   you can use service orr pm2 or supervisor
    ```bash
    cd /etc/systemd/system
    ```
