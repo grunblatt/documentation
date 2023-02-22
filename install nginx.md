@@ -18,7 +18,7 @@ Available applications:
   ```bash
   sudo ufw allow 'Nginx HTTP'
   sudo ufw allow 'ftp'
-  sudo ufw allow 'OpemSSH'
+  sudo ufw allow 'OpenSSH'
   ufw --force enable
   ```
   ```bash
