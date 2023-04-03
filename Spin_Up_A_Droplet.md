@@ -79,7 +79,7 @@ server {
     
 
      location / {
-                proxy_pass https://localhost:7130;
+                proxy_pass https://localhost:<your_port>;
 	proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection $http_connection;
