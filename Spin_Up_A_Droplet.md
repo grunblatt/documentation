@@ -72,7 +72,7 @@ enter in the file
 ```c
 server {
 
-        root /var/www/devapi.srx365.sprxdev.com/html;
+        root /var/www/<your_domain>/html;
         index index.html index.htm index.nginx-debian.html;
 
         server_name devapi.srx365.sprxdev.com;
