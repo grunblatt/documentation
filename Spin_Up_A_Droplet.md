@@ -75,7 +75,7 @@ server {
         root /var/www/<your_domain>/html;
         index index.html index.htm index.nginx-debian.html;
 
-        server_name devapi.srx365.sprxdev.com;
+        server_name<your_domain>;
     
 
      location / {
@@ -95,7 +95,7 @@ server {
 
 ```
 ```bash
-sudo ln -s /etc/nginx/sites-available/your_domain /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/<your_domain> /etc/nginx/sites-enabled/
 ```
 ```bash
 sudo nano /etc/nginx/nginx.conf
