@@ -132,8 +132,8 @@ host    all             all             <ip adderss of the backend droplet>/32  
 sudo ufw allow 5432/tcp
 ```
 ```
-```
 su postgres
+```
 ```
 sudo systemctl restart postgresql
 ```
