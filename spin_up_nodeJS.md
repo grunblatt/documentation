@@ -24,6 +24,9 @@ git clone <your project url>
 ```
 enter your username amd Personal access tokens
 ```
+```
+cd <your project>
+```
 npm install
 ```
 make sure you have the .env file
