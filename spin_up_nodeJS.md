@@ -78,7 +78,8 @@ sudo systemctl restart nginx
 sudo systemctl restart nginx <your project starting point (server.js)>
 ```
 now your ip address should work
-
+---
+---
 after having set up a database
 to build and migrate the data to the database
 ```
