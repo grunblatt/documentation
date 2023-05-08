@@ -24,7 +24,6 @@ git clone <your project url>
 ```
 enter your username amd Personal access tokens
 ```
-```
 cd <your project>
 ```
 ```
