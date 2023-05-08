@@ -139,7 +139,7 @@ sudo systemctl restart postgresql
 ```
 ---
 ---
-after having set up a database
+after having set up a database make sure the connection string is correct
 to build and migrate the data to the database
 ```
 npx prisma migrate dev --name init
