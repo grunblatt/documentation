@@ -72,7 +72,7 @@ systemctl status pm2-root
 sudo apt install nginx
 ```
 ```
-sudo apt install nginx
+nginx -t
 ```
 ```
 sudo systemctl restart nginx
