@@ -78,7 +78,7 @@ nginx -t
 sudo systemctl restart nginx
 ```
 ```
-sudo systemctl restart nginx <your project starting point (server.js)>
+sudo systemctl restart nginx <your project starting point (server.js)>????????????????????????
 ```
 now your ip address should work
 ---
