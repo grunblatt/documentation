@@ -126,7 +126,7 @@ host    all             all             127.0.0.1/32            md5
 to this
 ```
 # IPv4 local connections:
-host    all             all             0.0.0.0/0            md5
+host    all             all             <ip adderss of the backend droplet>/32            md5
 ```
 ```
 sudo ufw allow 5432/tcp
