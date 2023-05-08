@@ -103,12 +103,29 @@ sudo apt-get update
 ```bash
 sudo apt-get install postgresql postgresql-contrib
 ```
+```
+su - postgres
+```
+```
+psql
+```
+You will be shown something similar to this:
+```
+postgres@logrocket:~$ psql
+psql (10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help
+postgres=#
+```
+```
+\q
+```
+
 ```bash
 createuser --interactive --pwprompt 
 ```
 a prompt will be shown to you asking you to input your desired user role, name, password
 ```bash
-Enter name of role to add: <enter_a_name>
+Enter name of role to add: <enter root>
 Enter password for new role:
 Enter it again:
 Shall the new role be a superuser? (y/n) y
@@ -139,6 +156,9 @@ to this
 ```
 # IPv4 local connections:
 host    all             all             <ip adderss of the backend droplet>/32            md5
+```
+```
+su - root
 ```
 ```
 sudo ufw allow 5432/tcp
