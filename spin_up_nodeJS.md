@@ -86,6 +86,13 @@ nginx -t
 ```
 sudo systemctl restart nginx
 ```
+```
+sudo systemctl restart pm2-root
+```
+```
+pm2 start  server.js
+```
+
 
 now your ip address should work
 ---
