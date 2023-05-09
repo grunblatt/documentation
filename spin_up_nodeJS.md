@@ -172,6 +172,9 @@ sudo systemctl restart postgresql
 ---
 ---
 after having set up a database make sure the connection string is correct
+```
+pm2 start <your project starting point (server.js)>
+```
 to build and migrate the data to the database
 ```
 npx prisma migrate dev --name init
