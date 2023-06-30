@@ -4,3 +4,7 @@ this is for spining up a digitalocean droplet for an ASP.Net Core api and a diif
 
 ### FE_Documentation.md
 this is for the front end
+
+
+### default file in sites enabled
+this is a sample file for a node js project that is in /var/www/<project name> 
