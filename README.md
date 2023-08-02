@@ -2,7 +2,7 @@
 ### Spin_Up_C#.md
 this is for spinning up a droplet for an ASP.Net Core API and a different droplet for a Postgres database.
 
-### FE_Documentation.md
+### FE-documentation.md
 this is for the front end
 
 
