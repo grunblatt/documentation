@@ -87,3 +87,74 @@ sudo systemctl restart pm2-root
 ```
 pm2 start  server.js
 ```
+----
+if you need a DB - you can do this on the same droplet or on a new one.
+```bash
+sudo apt-get update
+```
+```bash
+sudo apt-get install postgresql postgresql-contrib
+```
+```
+su - postgres
+```
+```
+psql
+```
+You will be shown something similar to this:
+```
+postgres@logrocket:~$ psql
+psql (10.12 (Ubuntu 10.12-0ubuntu0.18.04.1))
+Type "help" for help
+postgres=#
+```
+```
+\q
+```
+
+```bash
+createuser --interactive --pwprompt 
+```
+a prompt will be shown to you asking you to input your desired user role, name, password
+```bash
+Enter name of role to add: <enter root>
+Enter password for new role:
+Enter it again:
+Shall the new role be a superuser? (y/n) y
+```
+```bash
+createdb -O <your_name> <db_name>
+```
+```bash
+nano /etc/postgresql/<your_version>/main/postgresql.conf
+```
+look for this line in the file
+```
+#listen_addresses = 'localhost'
+```
+uncomment, and change the value to '*'
+```
+listen_addresses = '*'
+```
+```bash
+nano /etc/postgresql/10/main/pg_hba.conf
+```
+mdify this section
+```
+# IPv4 local connections:
+host    all             all            0.0.0.0/0            md5
+```
+to this
+```
+# IPv4 local connections:
+host    all             all             <ip adderss of the backend droplet>/32            md5
+```
+```
+su - root
+```
+```
+sudo ufw allow 5432/tcp
+```
+```
+sudo systemctl restart postgresql
+```
