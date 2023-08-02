@@ -117,6 +117,7 @@ restart
 sudo systemctl restart nginx
 ```
 ---
+make sure to have a domain name.
     
 install certbot
 ```bash
