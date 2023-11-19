@@ -33,3 +33,4 @@ Go to the prod folder errands.nyc
 ```
 Git pull
 ```
+Before doing something on an old branch do git rebase dev 
