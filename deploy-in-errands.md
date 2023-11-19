@@ -8,7 +8,7 @@ There is a doc with the token
 
 
 On your local machine on the dev branch
-'''
+```
  git pull
 ```
 ```
