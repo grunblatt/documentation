@@ -61,7 +61,7 @@ Output
 ```
 pm2 startup systemd
 ```
-you shoul see something like this
+you should see something like this
 ```
 Output
 [PM2] Init System found: systemd
