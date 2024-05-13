@@ -38,10 +38,44 @@ PUT
 Body
 ```json
 {
-    "name": "perl2",
-    "slug": "perl2",
+    "name": "perl",
     "volunteer": "rachel",
     "done": false
+}
+```
+---
+
+/category
+
+<br>
+<br>
+
+POST
+/addCategory
+
+```json
+{
+    "name": "Bathroom"
+}
+```
+<br>
+
+GET
+/
+
+<br>
+
+GET
+/:categoryId
+
+<br>
+
+PUT
+editCategory/:categoryId
+
+```json
+{
+    "name": "Bathroom"
 }
 ```
 ---
@@ -72,13 +106,113 @@ GET
 <br>
 
 PUT
-/:itemId
+editItem/:itemId
 ```json
 {
     "name": "Bath Towels ",
     "categoryId": 2
 }
+```
 
-===
+---
+
+/variants
+
+<br>
+<br>
+
+POST
+/addVariant
+
+```json
+{
+    "name": "Bath Towels set - Style 1",
+    "SKU": "test SKU",
+    "mainImage": "https://secure.vendhq.com/images/placeholder/product/no-image-white-standard.png",
+    "additionalImages": ["https://secure.vendhq.com/images/placeholder/product/no-image-white-standard.png"],
+    "description": "2 blue towels ",
+    "itemsId": 4
+}
+```
+
+<br>
+
+GET
+/
+
+GET
+/:variantsId
+
+PUT
+/editVariant/:variantsId
+
+```json
+{
+    "name": "Bath Towels set - Style 1",
+    "SKU": "test SKU",
+    "mainImage": "https://secure.vendhq.com/images/placeholder/product/no-image-white-standard.png",
+    "additionalImages": ["https://secure.vendhq.com/images/placeholder/product/no-image-white-standard.png"],
+    "description": "2 blue towels ",
+    "itemsId": 4
+}
+```
+
+---
+
+/kallahItems
+
+<br>
+<br>
+
+POST
+/addKallahItems
+
+```json
+{
+    "kallahId": 2,
+    "ItemId": 4,
+    "VariantsId": 3,
+    "amountTaken": 1,
+    "blocked": false,
+    "notNeeded": false,
+    "storage": true,
+    "storageResolved": true,
+    "returned": false,
+    "note": "test"
+}
+```
+
+<br>
+
+GET
+/
+
+<br>
+
+GET
+/:kallahItemsId
+
+<br>
+
+PUT
+
+kallahItems/:kallahItemsId
+```json
+{
+    "kallahId": 2,
+    "ItemId": 4,
+    "VariantsId": 3,
+    "amountTaken": 1,
+    "blocked": false,
+    "notNeeded": false,
+    "storage": true,
+    "storageResolved": true,
+    "returned": false,
+    "note": "test"
+}
+
+
+
+
 
 
