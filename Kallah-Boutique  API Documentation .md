@@ -1,6 +1,8 @@
 
 https://kallahboutique.evelt.app
 
+---
+
 /kallah
 
 POST
@@ -35,4 +37,5 @@ Body
     "done": false
 }
 ```
+---
 
