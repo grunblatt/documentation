@@ -2,6 +2,7 @@
 https://kallahboutique.evelt.app
 
 ---
+<br>
 
 /kallah
 
@@ -45,6 +46,8 @@ Body
 ```
 ---
 
+<br>
+
 /category
 
 <br>
@@ -79,6 +82,8 @@ editCategory/:categoryId
 }
 ```
 ---
+
+<br>
 
 /items
 
@@ -116,6 +121,8 @@ editItem/:itemId
 
 ---
 
+<br>
+
 /variants
 
 <br>
@@ -140,8 +147,12 @@ POST
 GET
 /
 
+<br>
+
 GET
 /:variantsId
+
+<br>
 
 PUT
 /editVariant/:variantsId
@@ -158,6 +169,8 @@ PUT
 ```
 
 ---
+
+<br>
 
 /kallahItems
 
