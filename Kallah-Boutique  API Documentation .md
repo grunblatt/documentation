@@ -7,8 +7,6 @@ https://kallahboutique.evelt.app
 
 <br>
 <br>
-<br>
-<br>
 
 POST
 /addKallah
@@ -22,13 +20,17 @@ Body
     "done": false
 }
 ```
-
+<br>
 
 GET
 /
 
+<br>
+
 GET
 /:slug
+
+<br>
 
 PUT
 /editKallah/:slug
@@ -43,4 +45,40 @@ Body
 }
 ```
 ---
+
+/items
+
+<br>
+<br>
+
+POST
+/addItem
+```json
+{
+    "name": "Bath Towels ",
+    "categoryId": 2
+}
+```
+<br>
+
+GET
+/
+
+<br>
+
+GET
+/:itemId
+
+<br>
+
+PUT
+/:itemId
+```json
+{
+    "name": "Bath Towels ",
+    "categoryId": 2
+}
+
+===
+
 
