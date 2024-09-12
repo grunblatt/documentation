@@ -36,6 +36,7 @@ npm install --save-dev nodemon
 
 to add the project to the GitHub repo
 exemple
+```
 git remote add origin https://github.com/CloudSnob/CC-DB.git
-
+```
 
