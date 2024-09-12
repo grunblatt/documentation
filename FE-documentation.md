@@ -1,3 +1,7 @@
+Create new front-end on Static-HTML-Sites
+
+
+
 fallow the [it_documentation](https://github.com/CloudSnob/it_documentation/blob/main/nginx/static_website_hosting.md)
 
 ```
