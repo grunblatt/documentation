@@ -16,8 +16,4 @@ If asked, choose to Redirect to https
 ```
 sudo systemctl restart nginx
 ```
-in git bash run
-```
-npm run <the file with the env variable's> (lookup in package.json)
-```
-copy the files you build to your domain folder in the static-html droplet
+
