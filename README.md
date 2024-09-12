@@ -3,11 +3,7 @@
 this is for spinning up a droplet for an ASP.Net Core API and a different droplet for a Postgres database.
 
 ### FE-documentation.md
-this is for the front end
-
-
-### default file in sites-enabled--OLD
-this is a sample file for a node js project that is in /var/www/<project name> 
+this is for a front end
 
 ### spin-up-a-droplet.md
 this is for spinning up any droplet
